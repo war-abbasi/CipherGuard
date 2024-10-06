@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CipherGuard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="cipherguard-logo.png" alt="CipherGuard Logo" class="logo">
+            <h1>CipherGuard</h1>
+            <p class="slogan">Fortify Your Data with CipherGuard</p>
+        </header>
+        <section class="description">
+            <p>
+                CipherGuard is an advanced cryptographic tool designed to provide cutting-edge data security with user-friendly functionality. Featuring state-of-the-art encryption algorithms, CipherGuard ensures that sensitive information stays secure from modern cyber threats. Whether you're encrypting personal files or protecting corporate secrets, CipherGuard delivers seamless security solutions, offering high-grade encryption without compromising on speed or usability.
+            </p>
+            <p>
+                Try it now! Enter your text to be encrypted in the field below, and set a strong password for encryption. CipherGuard will handle the rest, keeping your data safe and secure with industry-leading protection.
+            </p>
+            <p>
+                Fortify your data with CipherGuard—because in the digital age, privacy is power.
+            </p>
+        </section>
+        <form id="cryptoForm">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <div class="buttons">
+                <button type="button" onclick="encryptMessage()">Encrypt</button>
+                <button type="button" onclick="decryptMessage()">Decrypt</button>
+            </div>
+        </form>
+
+        <div id="results">
+            <h2>Results</h2>
+            <p id="hashedPassword"></p>
+            <p id="encryptedMessage"></p>
+            <p id="decryptedMessage"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
